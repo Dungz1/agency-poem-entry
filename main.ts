@@ -13,25 +13,19 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'Signing',
+  'The Knife Grinder',
   '',
-  'The bank sets one pen between us.',
-  'My father\u2019s name has come loose from his hand;',
-  'I sign it for him \u2014 slow,',
-  'the way he taught me in the margins',
-  'of the grocery list, his fist over mine.',
+  'Every spring he came with the wheel,',
+  'and the street brought its blades to the step',
+  'in one basket, knives crossed like fish.',
   '',
-  'The stamp is small and red.',
-  'Outside he counts the change himself,',
-  'coin by coin, and gets it right.',
+  'He gave them back wearing the steel\u2019s opinion:',
+  'the good knife honest,',
+  'the cheap one warned and made to behave.',
   '',
-  'At dinner he signs the credit slip',
-  'before I can offer help.',
-  'I watch the letters lean and fall.',
-  'I write him better than he does.',
-  '',
-  'The straight name is the bank\u2019s.',
-  'The crooked one is his.',
+  'My mother cut her thumb that year',
+  'on the onion she had cut for thirty years.',
+  'The edge was new. It did not know her thumb.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
